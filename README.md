@@ -43,4 +43,6 @@ No arquivo `apiURLs.ts` na pasta `constants` contém minha apiKey para a visuali
 
 <hr/>
 
+<hr/>
+
 👉 Veja o resultado <a target="_blank" href="https://react-movie-web-app.herokuapp.com">aqui</a> 👈

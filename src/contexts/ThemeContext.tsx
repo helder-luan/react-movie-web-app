@@ -19,7 +19,7 @@ function ThemeContextProvider({ children }: PropsWithChildren) {
   const [theme, setTheme] = useState(dark);
 
   function toggleTheme() {
-    setTheme(theme.title == "light" ? dark : light);
+    setTheme(theme.title === "light" ? dark : light);
   }
 
   return (

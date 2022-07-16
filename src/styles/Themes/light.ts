@@ -1,0 +1,10 @@
+export default {
+  title: "light",
+  colors: {
+    primary: "",
+    secondary: "",
+    background: "#fefefe",
+    card: "#eee",
+    text: "#000",
+  },
+};

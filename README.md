@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Movie Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Site de busca de filmes, mostra os filmes mais bem avaliados. Opção de ver o poster do filme como um card 3D. </p>
 
-## Available Scripts
+## Libs utilizadas
 
-In the project directory, you can run:
+<ul>
+  <li>ReactJS</li>
+  <li>Typescript</li>
+  <li>ContextAPI</>
+  <li>Axios</li>
+  <li>React Icons</li>
+  <li>React Router</li>
+  <li>React Parallax Tilt</li>
+  <li>Styled Components</li>
+</ul>
 
-### `npm start`
+## Como executar o programa:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1º Passo:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Acesse https://www.themoviedb.org
+- Crie uma conta
+- Clique em seu avatar
+- No menu, clique em `"Settings"`
+- Clique em `"API"` no menu lateral
+- Clique `"Create"` ou `"click here"` na página API
 
-### `npm test`
+2º Passo:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Executar o comando `npm install`
 
-### `npm run build`
+3º Passo:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Crie um arquivo `.env` com as seguintes variáveis:
+  - `API_KEY`=api_key=`(Insira aqui sua API key criada no site do TheMovieDB)`
+  - `API_URL`=https://api.themoviedb.org/3/movie/
+  - `API_SEARCH`=https://api.themoviedb.org/3/search/movie/
+  - `API_IMAGE`=https://image.tmdb.org/t/p/w500
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4ª Passo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Executar o comando `npm run dev`

@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Drawer from "./components/Drawer";
+import Navbar from "./components/Navbar";
+import { ModalContextProvider } from "./contexts/ModalContext";
+import { ThemeContextProvider } from "./contexts/ThemeContext";
+import Modal from "./pages/Home/Components/Modal";
+import { GlobalStyles } from "./styles/Global";
 
 function App() {
+  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
+
+  function handleStateDrawer() {
+    setOpenDrawer(!openDrawer);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContextProvider>
+      <GlobalStyles />
+      <ModalContextProvider>
+        <div className="App">
+          <Navbar handleStateDrawer={handleStateDrawer} />
+          <Drawer optionDrawer={{ openDrawer, handleStateDrawer }} />
+          <Outlet />
+        </div>
+        <Modal />
+      </ModalContextProvider>
+    </ThemeContextProvider>
   );
 }
 

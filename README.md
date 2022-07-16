@@ -26,18 +26,21 @@
 - Clique em `"API"` no menu lateral
 - Clique `"Create"` ou `"click here"` na página API
 
+<strong>OBS:</strong>
+
+No arquivo `apiURLs.ts` na pasta `constants` contém minha apiKey para a visualização desse projeto. Aconselho usar a sua apiKey, que foi criada no site do the movie, para evitar qualquer erro futuro.
+
+- Basta acessar o arquivo `"apiURLs.ts"` e alterar o valor para a sua apiKey:
+  - `API_KEY`=api_key=`(Insira aqui sua API key criada no site do TheMovieDB)`
+
 2º Passo:
 
 - Executar o comando `npm install`
 
-3º Passo:
+3ª Passo:
 
-- Crie um arquivo `.env` com as seguintes variáveis:
-  - `API_KEY`=api_key=`(Insira aqui sua API key criada no site do TheMovieDB)`
-  - `API_URL`=https://api.themoviedb.org/3/movie/
-  - `API_SEARCH`=https://api.themoviedb.org/3/search/movie/
-  - `API_IMAGE`=https://image.tmdb.org/t/p/w500
+- Executar o comando `npm start`
 
-4ª Passo:
+<hr/>
 
-- Executar o comando `npm run dev`
+👉 Veja o resultado <a target="_blank" href="https://react-movie-web-app.herokuapp.com">aqui</a> 👈

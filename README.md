@@ -41,3 +41,7 @@
 4ª Passo:
 
 - Executar o comando `npm run dev`
+
+<hr/>
+
+👉 Veja o resultado <a target="_blank" href="https://react-movie-web-app.herokuapp.com">aqui</a> 👈
